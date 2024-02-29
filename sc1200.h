@@ -27,7 +27,7 @@
 	#include <assert.h>
 #else
 	#ifndef int32_t
-	typedef long int		int32_t;				/* 32 bit "accumulator" (L_*) */
+	typedef int		int32_t;				/* 32 bit "accumulator" (L_*) */
 	#endif
 
 	#ifndef int16_t
@@ -39,7 +39,7 @@
 	#endif
 
 	#ifndef uint32_t
-	typedef unsigned long	uint32_t;				/* 32 bit unsigned data */
+	typedef unsigned int	uint32_t;				/* 32 bit unsigned data */
 	#endif
 #endif
 
@@ -48,7 +48,15 @@
 /* =================== */
 
 
-typedef double			Word40;					/* 40 bit "accumulator"	*/					
+typedef double			Word40;					/* 40 bit "accumulator"	*/
+
+/* Jack added here for compile */
+typedef short Shortword; // Assuming Shortword is meant to represent a short integer
+typedef long Longword;   // Assuming Longword is meant to represent a long integer
+
+
+
+
 /* ================== */
 /* General Definition */
 /* ================== */

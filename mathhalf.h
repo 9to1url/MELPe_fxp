@@ -101,7 +101,7 @@ int16_t	extract_h(int32_t L_var1);                              /* 1 ops */
 
 /* Round */
 
-int16_t	round(int32_t L_var1);                                  /* 1 ops */
+int16_t	mf_round(int32_t L_var1);                                  /* 1 ops */
 
 /* Normalization */
 

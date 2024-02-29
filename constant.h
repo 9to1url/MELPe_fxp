@@ -73,8 +73,11 @@ Secretariat fax: +33 493 65 47 16.
 #define X60_Q9		30720                                    /* 60 * (1 << 9) */
 #define MONE_Q15	-32768                                    /* (-(1 << 15)) */
 
-#define LW_SIGN		((long) 0x80000000)                           /* sign bit */
-#define LW_MIN		((long) 0x80000000)
+
+#include <stdint.h>
+#define LW_SIGN	INT32_MIN
+#define LW_MIN INT32_MIN
+
 #define LW_MAX		((long) 0x7fffffff)
 
 #define SW_MIN		((short) -32768)                  /* smallest RAM, 0x8000 */
